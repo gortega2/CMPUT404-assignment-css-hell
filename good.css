@@ -1,0 +1,21 @@
+h1, p, h2, h3, li {
+  color: black;
+  text-align: center;
+  font-family: comic_sans;
+  margin-left: 200pt;
+  margin-right: 200pt;
+}
+
+h1{
+  margin-block: 40pt
+    
+}
+
+p {
+  margin-left: 200pt;
+  margin-right: 200pt;
+}
+a {
+  display:block;
+  text-align: center
+}

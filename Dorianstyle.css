@@ -3,12 +3,16 @@ body {
 }
 
 h1, h2, h3, h4, h5 {
-  font-family: "Copperplate Gothic", Gothic;
+  font-family: Mono;
   font-weight: bold !important; /* I know important is bad but I want to overrride the inline css */
   /*! font-weight: bold; */
 }
 
 p {
-  font-family: century;
-  font-size: 13pt !important;
+  font-size: 20pt !important;
+  font-family:  "Brush Script MT", cursive;
 }
+
+
+
+

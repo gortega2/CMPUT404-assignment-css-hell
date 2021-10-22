@@ -1,13 +1,17 @@
-h1, p, h2, h3, li {
+h1, h2, h3, li, p {
   color: black;
   text-align: center;
-  font-family: comic_sans;
+  font-family: "Garamond";
   margin-left: 200pt;
   margin-right: 200pt;
+  color: yellow;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+  
 }
 
 h1{
-  margin-block: 40pt
+  margin-block: 40pt;
+  font-family: "Trebuchet MS";
     
 }
 
@@ -17,5 +21,53 @@ p {
 }
 a {
   display:block;
-  text-align: center
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+
+.center {
+  display; block;
+  margin-left: 45%;
+  margin-right: auto;
+  width: 10%;
+  text-align: center;
+}
+
+html { 
+  background: url(images/background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+a:link{
+  color:yellow;
+}
+
+a:visited{
+  color:orange;
+}
+
+.item-a {
+  grid-area: header;
+}
+.item-b {
+  grid-area: main;
+}
+.item-c {
+  grid-area: sidebar;
+}
+.item-d {
+  grid-area: footer;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header header header"
+    "main main . sidebar"
+    "footer footer footer footer";
 }
